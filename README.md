@@ -1,10 +1,14 @@
-#pdfToText
+# PdfToText
 
-#php version up to 8.
+## php version should ^8.
 
-#php version not upto 8.
-please change the function vendor/phpoffice/phpword/src/PhpWord/Shared/XMLWriter.php
-"public function writeAttribute($name, $value): bool to public function writeAttribute($name, $value)"
+## php older versions.
+Remove the return type bool.
+```bash
+public function writeAttribute($name, $value): bool
+```
 
-#run 
-php index.php (will overwrite the same file).
+## Usage
+```bash
+php index.php
+```
